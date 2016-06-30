@@ -1,21 +1,39 @@
 <?xml version="1.0"?>
 <registry>
-    <records prefix="plone.resources/violareggiocalabria-main"
+    <records prefix="plone.resources/barcelloneta"
               interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="css">
-          <element>++theme++parruc.violareggiocalabriatheme/main.less</element>
+          <element>++theme++parruc.violareggiocalabriatheme/barcelloneta.less</element>
+       </value>
+    </records>
+
+    <records prefix="plone.resources/violareggiocalabria"
+              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="css">
+          <element>++theme++parruc.violareggiocalabriatheme/violareggiocalabria.less</element>
        </value>
     </records>
 
     <!-- bundle definition -->
-    <records prefix="plone.bundles/violareggiocalabria-bundle"
+    <records prefix="plone.bundles/barcelloneta-bundle"
               interface='Products.CMFPlone.interfaces.IBundleRegistry'>
       <value key="resources">
-        <element>violareggiocalabria-main</element>
+        <element>barcelloneta</element>
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
-      <value key="csscompilation">++theme++parruc.violareggiocalabriatheme/style.css</value>
+      <value key="csscompilation">++theme++parruc.violareggiocalabriatheme/barcelloneta.css</value>
+      <value key="last_compilation"></value>
+    </records>
+
+    <records prefix="plone.bundles/violareggiocalabria-bundle"
+              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+      <value key="resources">
+        <element>violareggiocalabria</element>
+      </value>
+      <value key="enabled">True</value>
+      <value key="compile">True</value>
+      <value key="csscompilation">++theme++parruc.violareggiocalabriatheme/violareggiocalabria.css</value>
       <value key="last_compilation"></value>
     </records>
 </registry>
