@@ -1,42 +1,50 @@
 <?xml version="1.0"?>
 <registry>
-    <records prefix="plone.resources/barcelloneta"
-             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="css">
-          <element>++resource++parruc.violareggiocalabriatheme/less/barcelloneta.less</element>
-       </value>
-    </records>
 
+    <!-- RESOURCES -->
     <records prefix="plone.resources/jquery.countdown"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-        <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.countdown.js</value>
+    </records>
+
+    <records prefix="plone.resources/barceloneta"
+             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="css">
+          <element>++resource++parruc.violareggiocalabriatheme/less/barceloneta.less</element>
+       </value>
     </records>
 
     <records prefix="plone.resources/violareggiocalabria"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery,jquery.countdown</value>
-       <value key="url">++resource++parruc.violareggiocalabriatheme"</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/violareggiocalabria.js</value>
        <value key="css">
           <element>++resource++parruc.violareggiocalabriatheme/less/violareggiocalabria.less</element>
        </value>
     </records>
 
-
-    <!-- bundle definition -->
-    <records prefix="plone.bundles/violareggiocalabria-bundle"
+    <!-- BUNDLES -->
+    <records prefix="plone.bundles/barceloneta"
              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
       <value key="resources">
-          <element>barcelloneta</element>
+          <element>barceloneta</element>
+      </value>
+      <value key="depends">plone</value>
+      <value key="enabled">True</value>
+      <value key="compile">True</value>
+      <!--value key="merge_with">default</value-->
+      <value key="last_compilation"></value>
+    </records>
+
+    <records prefix="plone.bundles/violareggiocalabria"
+             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+      <value key="resources">
           <element>jquery.countdown</element>
           <element>violareggiocalabria</element>
       </value>
+      <value key="depends">barceloneta</value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
-      <value key="jscompilation">++resource++parruc.violareggiocalabriatheme/dist/violareggiocalabria.js</value>
-      <value key="csscompilation">++resource++parruc.violareggiocalabriatheme/dist/violareggiocalabria.css</value>
-      <value key="merge_with">default</value>
+      <!--value key="merge_with">default</value-->
       <value key="last_compilation"></value>
     </records>
 </registry>
