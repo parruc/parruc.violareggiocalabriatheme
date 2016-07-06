@@ -9,33 +9,28 @@
        </value>
     </records>
 
-    <records prefix="plone.resources/isotope"
+    <!--records prefix="plone.resources/isotope"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/isotope.min.js</value>
-    </records>
+   </records-->
 
     <records prefix="plone.resources/jquery.jqueryui"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.jqueryui.min.js</value>
     </records>
 
     <records prefix="plone.resources/jquery.bxslider"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery,jquery.jqueryui</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.bxslider.min.js</value>
     </records>
 
     <records prefix="plone.resources/jquery.countdown"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.countdown.min.js</value>
     </records>
 
     <records prefix="plone.resources/jquery.flexslider"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.flexslider.min.js</value>
        <value key="css">
           <element>++resource++parruc.violareggiocalabriatheme/less/flexslider.css</element>
@@ -44,7 +39,6 @@
 
     <records prefix="plone.resources/jquery.prettyphoto"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.prettyPhoto.js</value>
        <value key="css">
           <element>++resource++parruc.violareggiocalabriatheme/less/prettyPhoto.css</element>
@@ -53,7 +47,6 @@
 
     <records prefix="plone.resources/jquery.scrollable"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="deps">jquery</value>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.scrollable.js</value>
     </records>
 
@@ -95,7 +88,6 @@
           <element>jquery.scrollable</element>
       </value>
       <value key="depends">barceloneta</value>
-      <value key="depends">plone</value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
       <!--value key="merge_with">default</value-->
