@@ -39,7 +39,7 @@
     <drop css:content=".hero" />
 
     <!-- full-width breadcrumb -->
-    <replace css:content="#viewlet-above-content" css:theme="#above-content" />
+    <replace css:content="#portal-breadcrumbs" css:theme="#above-content" />
 
     <!-- Central column -->
     <replace css:theme="#content-container" method="raw">
