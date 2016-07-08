@@ -33,7 +33,7 @@
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/jquery.flexslider.min.js</value>
        <value key="css">
-          <element>++resource++parruc.violareggiocalabriatheme/less/flexslider.css</element>
+          <element>++resource++parruc.violareggiocalabriatheme/less/flexslider.less</element>
        </value>
     </records>
 

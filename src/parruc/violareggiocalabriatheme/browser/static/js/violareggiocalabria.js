@@ -2,9 +2,9 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
   "use strict";
   $(document).ready(function() {
     //// Flexslider
-    $('.flexslider').flexslider({smoothHeight: true,
-                                 animation: "slide",
-                                controlNav: true}
+    $('.template-hp .flexslider').flexslider({smoothHeight: true,
+                                              animation: "slide",
+                                              controlNav: true}
     );
     ///// Countdown
     $('#countdown').countdown($('#countdown').data("deadline"), function(event) {
