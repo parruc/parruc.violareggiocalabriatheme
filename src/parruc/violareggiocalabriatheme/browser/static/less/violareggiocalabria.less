@@ -32,12 +32,19 @@
 @table-even: @light-grey;
 
 
+.plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@red, 20%); color: white;}
+.plone-navbar-nav { text-transform: uppercase}
 body.template-hp #portal-breadcrumbs {display: none;}
 body.template-edit {background-color: #fff;}
-section#m-a-n {margin-top:150px;}
+section#m-a-n {margin:0px; margin-top: 10%;}
 .launch-body {background-color: @dark-grey; padding: 10px;}
 .match {padding: 10px 0px 0px 0px;}
 .flexslider{
-    .flex-control-paging{top: 80%;}
-    .caption h1 {color: @light-grey;}
+    .flex-control-paging{ position:absolute; top: 10px;}
+    .caption {
+        h1 {color: @light-grey;}
+        a.read-more{ z-index: 100;}
+    }
+
 }
+.sup { vertical-align: super; font-size: smaller; }

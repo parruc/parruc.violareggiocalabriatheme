@@ -1,11 +1,8 @@
 @plone-sitenav-bg: #f18000;
 @plone-text-color: #090909;
-@plone-sitenav-link-hover-bg: darken(@plone-sitenav-bg, 20%);
-.plone-nav > li > a {
-  color: @plone-text-color;
-}
-
-#portal-top .plone-navbar{background: transparent; box-shadow: none;}
 
 /* Import Barceloneta styles */
 @import "++theme++barceloneta/less/barceloneta.plone.less";
+
+.plone-nav > li > a { color: @plone-text-color; }
+#portal-top .plone-navbar{background: transparent; box-shadow: none;}
