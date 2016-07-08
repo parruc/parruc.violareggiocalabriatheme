@@ -1,8 +1,11 @@
-require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider"], function($) {
+require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider", "jquery.prettyphoto"], function($) {
   "use strict";
   $(document).ready(function() {
     //// Flexslider
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({smoothHeight: true,
+                                 animation: "slide",
+                                controlNav: true}
+    );
     ///// Countdown
     $('#countdown').countdown($('#countdown').data("deadline"), function(event) {
         $(this).html(event.strftime('%D giorni %H:%M:%S'));

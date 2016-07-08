@@ -39,7 +39,7 @@ a:visited{color:inherit;}
 .margin-30{margin:30px 0px;}
 /* buttons */
 .btn-dflt{padding-left:20px;padding-right:20px;.rounded(@radius: 20px);color:#fff;font-size:12px;font-weight:700;}
-a.btn, button.btn{.inline-block;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;.rounded(@radius: 20px);padding:12px 17px;height:auto;}
+a.btn, button.btn{.inline-block;color:#fff;font-size:12px;font-weight:700;.rounded(@radius: 20px);padding:12px 17px;height:auto; min-height: 20px;}
 .btn-bordered{border:2px solid @red;padding: 12px 17px;
   .transition(all 300ms ease-in-out);
 
@@ -73,11 +73,6 @@ a.btn, button.btn{.inline-block;color:#fff;font-size:12px;font-weight:700;text-t
 /* Base for label styling */
 label{line-height:19px;margin:10px 20px;display: inline-block;color:#767676;}
 
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
-}
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
   position: relative;
@@ -271,7 +266,6 @@ table.table-striped-dflt{width:100%;background:#f7f7f7;border-collapse: collapse
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
 .flex-direction-nav a:before  { font-family: "FontAwesome"; font-size: 40px; display: inline-block; content: '\f104'; }
 .flex-direction-nav a.flex-next:before  { content: '\f105'; }
-ol.flex-control-nav.flex-control-paging{display:none;}
 .caption{position:absolute;top:12%;left:0px;width:100%;
 		h1{font-size:35px;text-transform:none;font-weight:700;
 		  span{display:block;font-weight:400; text-transform: none;}
@@ -280,7 +274,7 @@ ol.flex-control-nav.flex-control-paging{display:none;}
 /* ############################################################################## */
 /* Header
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
-.top{
+#portal-top .top{
 	width:100%;
 	background:@red;
 	height:49px;
@@ -549,7 +543,8 @@ ul.t-post li{.inline-block;padding: 30px 20px 30px;border-top:1px solid #1f4160;
 .table-striped tr:hover{border-right:3px solid @red;}
 .t-h{color:#4c6d8e;line-height: 36px!important;}
 .t-c{text-align:center;color:#4c6d8e;padding:0px 20px;}
-.table-striped tr:nth-child(2n){background:#0d2840;}
+.table-striped tr:nth-child(2n+1){background:@table-odd;}
+.table-striped tr:nth-child(2n){background:@table-even;}
 
 /* ########### partner ####################*/
 .p-l{padding:40px 0px;overflow:hidden;text-align:center;background:url(images/big-shadow.png)no-repeat center bottom;
@@ -801,7 +796,7 @@ ul.markered li:before{content:"\f192";font-family: FontAwesome; display: inline-
 .post-content iframe{width:100%!important;}
 /* PAGINATION */
 
-.pagination{background:#143655; text-align:center;overflow:hidden;float: left;width: 100%;
+.pagination{background:transparent; text-align:center;overflow:hidden;float: left;width: 33%;
 			ul > li{.inline-block;
 					a{display:block;line-height:50px;border-bottom:2px solid transparent;color:#4c6d8e;font-weight:700;padding:0px 15px;.box-sizing;}
 					a:hover{color:#fff;border-bottom:2px solid @red;}
