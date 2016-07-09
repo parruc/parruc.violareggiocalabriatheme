@@ -58,16 +58,9 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
   });*/
 
     $("#v-tabs, #tab").tabs();
-    $('.slider1').bxSlider({
+    $('.players-slider').bxSlider({
       slideWidth: 157,
       minSlides: 2,
-      maxSlides: 4,
-      pager: false,
-      slideMargin: 0
-    });
-    $('.slider2').bxSlider({
-      //slideWidth: 156,
-      minSlides: 1,
       maxSlides: 4,
       pager: false,
       slideMargin: 0

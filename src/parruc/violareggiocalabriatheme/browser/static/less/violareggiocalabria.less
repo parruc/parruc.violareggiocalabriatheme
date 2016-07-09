@@ -30,12 +30,17 @@
 @light-grey: #fafafa;
 @table-odd: @dark-grey;
 @table-even: @light-grey;
+@white: #ffffff;
 
 
 .plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@red, 20%); color: white;}
 .plone-navbar-nav { text-transform: uppercase}
-body.template-hp #portal-breadcrumbs {display: none;}
-body.template-edit {background-color: #fff;}
+#main-container {background-color: @white; }
+body.template-hp {
+    #portal-breadcrumbs {display: none;}
+    #main-container {background-color: transparent; }
+}
+body.template-edit {background-color: @white;}
 section#m-a-n {margin:0px; margin-top: 10%;}
 .launch-body {background-color: @dark-grey; padding: 10px;}
 .match {padding: 10px 0px 0px 0px;}
@@ -45,6 +50,13 @@ section#m-a-n {margin:0px; margin-top: 10%;}
         h1 {color: @light-grey;}
         a.read-more{ z-index: 100;}
     }
-
 }
 .sup { vertical-align: super; font-size: smaller; }
+
+.countdown{
+    font-size: 120%;
+    color: @dark-grey;
+    span{ vertical-align: middle; }
+    .label{text-transform: uppercase; float:left; }
+    #countdown {font-size: 140%; float: right;}
+}
