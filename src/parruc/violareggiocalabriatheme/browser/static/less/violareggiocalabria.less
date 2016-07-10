@@ -1,22 +1,3 @@
-/* Customize whatever you want except theme variables that needs to
-   be customized in barcelloneta.less
-*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Header / #top-menu
-3. Video / #v-tabs
-4. Our players / .players
-5. Twiter, Blog, Table / .twiter
-6. Partner / .p-l
-7. Blog / .bc-t
-8. Post / article.blog-item
-9. Team / .team-pl
-10. Gallery / .gallery-item
-11. Contacts / .contact-form
-12. Footer / footer
--------------------------------------------------------------------*/
 @import 'font-awesome.less';
 @import 'reset.less';
 @import 'main.less';
@@ -32,15 +13,18 @@
 @table-even: @light-grey;
 @white: #ffffff;
 
-
+/* MENU */
 .plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@red, 20%); color: white;}
 .plone-navbar-nav { text-transform: uppercase}
+/* GENERIC */
 #main-container {background-color: @white; }
 body.template-hp {
     #portal-breadcrumbs {display: none;}
     #main-container {background-color: transparent; }
 }
 body.template-edit {background-color: @white;}
+
+/* HP */
 section#m-a-n {margin:0px; margin-top: 10%;}
 .launch-body {background-color: @dark-grey; padding: 10px;}
 .match {padding: 10px 0px 0px 0px;}
@@ -51,16 +35,16 @@ section#m-a-n {margin:0px; margin-top: 10%;}
         a.read-more{ z-index: 100;}
     }
 }
-.sup { vertical-align: super; font-size: smaller; }
-
 .countdown{font-size: 120%; color: @dark-grey;
+    .sup { vertical-align: super; font-size: smaller; }
     span{ vertical-align: middle; }
     .label{text-transform: uppercase; float:left; }
     #countdown {font-size: 140%; float: right;}
 }
-
 #twitter a{ border-bottom: 0px; padding: 0px;}
 #sponsors{color: @light-grey;
     li {float:left;}
-
 }
+#video a {display: block; width: 100%; height: 53px;}
+#twitter .col-xs-12, #sponsors .col-xs-12, #classifica .col-xs-12 {padding: 0px;}
+.bx-controls-direction{margin:auto;}
