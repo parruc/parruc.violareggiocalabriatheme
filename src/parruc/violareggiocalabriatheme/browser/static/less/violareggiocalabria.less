@@ -1,4 +1,5 @@
-@import 'font-awesome.less';
+@import 'reset.less';
+@import 'fonts.less';
 @import 'reset.less';
 @import 'main.less';
 @import 'responsive.less';
@@ -13,38 +14,35 @@
 @table-even: @light-grey;
 @white: #ffffff;
 
-/* MENU */
-.plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@red, 20%); color: white;}
-.plone-navbar-nav { text-transform: uppercase}
 /* GENERIC */
 #main-container {background-color: @white; }
-body.template-hp {
-    #portal-breadcrumbs {display: none;}
-    #main-container {background-color: transparent; }
-}
 body.template-edit {background-color: @white;}
 
 /* HP */
-section#m-a-n {margin:0px; margin-top: 10%;}
-.launch-body {background-color: @dark-grey; padding: 10px;}
-.match {padding: 10px 0px 0px 0px;}
-.flexslider{
-    .flex-control-paging{ position:absolute; top: 10px;}
-    .caption {
-        h1 {color: @light-grey;}
-        a.read-more{ z-index: 100;}
+body.template-hp {
+    #portal-breadcrumbs {display: none;}
+    #main-container {background-color: transparent; }
+    section#m-a-n {margin:0px; margin-top: 10%;}
+    .launch-body {background-color: @dark-grey; padding: 10px;}
+    .match {padding: 10px 0px 0px 0px;}
+    .flexslider{
+        .flex-control-paging{ position:absolute; top: 10px;}
+        .caption {
+            h1 {color: @light-grey;}
+            a.read-more{ z-index: 100;}
+        }
     }
+    .countdown{font-size: 120%; color: @dark-grey;
+        .sup { vertical-align: super; font-size: smaller; }
+        span{ vertical-align: middle; }
+        .label{text-transform: uppercase; float:left; }
+        #countdown {font-size: 140%; float: right;}
+    }
+    #twitter a{ border-bottom: 0px; padding: 0px;}
+    #sponsors{color: @light-grey;
+        li {float:left;}
+    }
+    #video a {display: block; width: 100%; height: 53px;}
+    #twitter .col-xs-12, #sponsors .col-xs-12, #classifica .col-xs-12 {padding: 0px;}
+    .bx-controls-direction{margin:auto;}
 }
-.countdown{font-size: 120%; color: @dark-grey;
-    .sup { vertical-align: super; font-size: smaller; }
-    span{ vertical-align: middle; }
-    .label{text-transform: uppercase; float:left; }
-    #countdown {font-size: 140%; float: right;}
-}
-#twitter a{ border-bottom: 0px; padding: 0px;}
-#sponsors{color: @light-grey;
-    li {float:left;}
-}
-#video a {display: block; width: 100%; height: 53px;}
-#twitter .col-xs-12, #sponsors .col-xs-12, #classifica .col-xs-12 {padding: 0px;}
-.bx-controls-direction{margin:auto;}
