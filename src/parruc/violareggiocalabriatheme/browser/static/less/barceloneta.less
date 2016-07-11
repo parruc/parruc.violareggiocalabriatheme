@@ -1,10 +1,10 @@
-@plone-sitenav-bg: #f18000;
-@plone-text-color: #090909;
-
 /* Import Barceloneta styles */
 @import "++theme++barceloneta/less/barceloneta.plone.less";
+@plone-sitenav-bg: #f18000;
+@plone-text-color: #090909;
+@plone-sitenav-link-hover-bg: darken(@plone-sitenav-bg, 20%);
 
 .plone-nav > li > a { color: @plone-text-color; }
 #portal-top .plone-navbar{background: transparent; box-shadow: none;}
-.plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@plone-sitenav-bg, 20%); color: white;}
+//.plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@plone-sitenav-bg, 20%); color: white;}
 .plone-navbar-nav { text-transform: uppercase}

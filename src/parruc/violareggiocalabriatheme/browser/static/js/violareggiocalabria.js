@@ -2,8 +2,7 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
   "use strict";
   $(document).ready(function() {
     //// Flexslider
-    $('.template-hp .flexslider').flexslider({controlNav: true}
-    );
+    $('.template-hp .flexslider').flexslider({controlNav: true});
     ///// Countdown
     $('#countdown').countdown($('#countdown').data("deadline"), function(event) {
         $(this).html(event.strftime("%D <span class='sup'>G</span> %H <span class='sup'>H</span> %M <span class='sup'>M</span> %S <span class='sup'>S</span>"));
