@@ -60,6 +60,8 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
       slideWidth: 157,
       minSlides: 2,
       maxSlides: 4,
+      nextSelector: ".bx-controls",
+      prevSelector: ".bx-controls",
       pager: false,
       slideMargin: 0
     });
