@@ -23,7 +23,6 @@
 
 /* GENERIC */
 #main-container {background-color: @white; }
-//.outer-wrapper {overflow-x: hidden;}
 body{  background: @base-color;
   background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
   background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
@@ -91,7 +90,7 @@ body.template-hp {
         .all-team {float: left;}
     }
 
-    #ttb{
+    #ttb{overflow:hidden;
         #twitter a{ border-bottom: 0px; padding: 0px;}
 
         #partners{background: @light-grey; border-bottom: 3px solid @red;
