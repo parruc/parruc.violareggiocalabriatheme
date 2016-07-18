@@ -14,9 +14,19 @@
 @table-odd: @dark-grey;
 @table-even: @light-grey;
 @white: @light-grey;
+@bg-gradient-middle:rgba(9,9,9,0.5);
+@bg-gradient-borders:rgba(9,9,9,1);
+ 
+
 
 /* GENERIC */
 #main-container {background-color: @white; }
+body{  background: @base-color;
+  background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
+  background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
+  .outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}
+}
+
 body.template-edit {background-color: @white;}
 
 /* HP */
@@ -32,11 +42,8 @@ body.template-hp {
     #main-container {background-color: transparent; }
     section#m-a-n {margin:0px; margin-top: 10%;
         .container {display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden;
-            .col-4{flex: 1; position: relative;
-                .news-container{ height: 100%;  background-color:@white;}
-                .r-box-n{background: transparent;}
-            }
-            .col-8{flex: 2; }
+	    .r-box-n article span.date-n{background-color: @white;}
+
         }
         .launch-body {background-color: @dark-grey; padding: 10px;}
         .match {padding: 10px 0px 0px 0px;}
