@@ -8,14 +8,7 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
         $(this).html(event.strftime("%D <span class='sup'>G</span> %H <span class='sup'>H</span> %M <span class='sup'>M</span> %S <span class='sup'>S</span>"));
     });
 
-    // Select Navigation on Mobile Devices
-    /*$('.mobilemenu select').change(function() {
-      var url = $(this).val();
-      if (url) {
-        window.location = url;
-      }
-      return false;
-  });*/
+    $(".img-responsive").removeAttr("width").removeAttr("height");
 
     ///// Masonry Isotope
     /*$(window).load(function() {

@@ -39,7 +39,7 @@
   border-bottom-right-radius: @bottomright;
   border-bottom-left-radius: @bottomleft;
   border-top-left-radius: @topleft;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 /* Rounded / .rounded - elements.less
@@ -48,7 +48,7 @@
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 .rounded-corners(@tl: 3px, @tr: 3px, @br: 3px, @bl: 3px) {
   -moz-border-radius-topleft: @tl;
@@ -231,37 +231,4 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-/* Grid System 12 Columns
-/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 10px;
-  .box-sizing();
-}
-.container:before,
-.container:after {
-  display: table;
-  content: " ";
-}
-
-.container:after {
-  clear: both;
-}
-
-.container:before,
-.container:after {
-  display: table;
-  content: " ";
-}
-
-.container:after {
-  clear: both;
-}
-.col-12{ width: 100%;}
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
-  
-  .box-sizing();
 }
