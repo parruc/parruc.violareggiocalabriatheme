@@ -1,8 +1,7 @@
 @import 'reset.less';
 @import 'fonts.less';
-@import 'reset.less';
 @import 'main.less';
-@import 'responsive.less';
+@import 'bootstrap.min.css';
 
 @bg: #212121;
 @red: #f18000;
@@ -14,15 +13,25 @@
 @table-odd: @dark-grey;
 @table-even: @light-grey;
 @white: @light-grey;
+@sitenav-bg: @red;
+@text-color: @base-color;
+@sitenav-link-hover-bg: darken(@sitenav-bg, 20%);
 
 /* GENERIC */
 #main-container {background-color: @white; }
+//.outer-wrapper {overflow-x: hidden;}
 body.template-edit {background-color: @white;}
 .container { padding:0px; }
 .no-padding-right{padding-right: 0px;}
 .no-padding-left{padding-left: 0px;}
-.table-row {display: table; table-layout: fixed;}
-.table-row > [class^="col-"] {display: table-cell;float: none;}
+.no-padding{.no-padding-left; .no-padding-right; }
+.padding-right{padding-right: 15px;}
+.padding-left{padding-left: 15px;}
+.padding{.padding-left; .padding-right; }
+#content-core{ background-color: @white; }
+.table-row {display: table; border-collapse: separate;
+    div[class^="col-"]{ display: table-cell; float:none;}
+}
 #full-width-slides{position: relative; top: 40px;
     .caption{position: absolute; top: 25%; color: @white;
         h1 {margin: 0px 20px 20px 160px;}
@@ -34,16 +43,21 @@ body.template-edit {background-color: @white;}
 body.template-hp {
     #portal-breadcrumbs {display: none;}
     #main-container {background-color: transparent; }
-    section#m-a-n {position: relative; bottom: 75px; z-index: 4;
+    section#m-a-n {margin-top: -75px; z-index: 4;
+        .news-container {position: relative;}
+        .tab, .tab-small {z-index: 4; position: relative; top: 2px; margin-left: 10px;}
         .launch-body {background-color: @dark-grey; padding: 10px;}
         .result-separator {font-size:50px; position:absolute; color: @darkest-gey; }
         .match {padding: 10px 0px 0px 0px;
-            .team-league{margin-top:50px; color: @white; font-size: 125%;}
-            .team-logo {text-align:center; margin-bottom: -25px;}
+            .team-league{margin-top:50px; color: @white; font-size: 125%; text-align: center;}
+            .team-logo {text-align:center; margin-bottom: -25px;
+                img {margin: auto;}
+             }
+
             .club-name {padding: 0px 15px;}
             .club-name {padding-right: 0px 15px;}
         }
-        .countdown{font-size: 120%; color: @light-grey; background-color: @darkest-gey; position: absolute; bottom:0px; left: 0px; right: 0px; text-align: center;
+        .countdown{padding-top: 20px; padding-bottom: 20px; font-size: 120%; color: @light-grey; background-color: @darkest-gey;  text-align: center; /*position: absolute; bottom:0px; left: 0px; right: 0px;*/
             .sup { font-size: smaller; }
             .label{text-transform: uppercase;}
             #countdown {font-size: 130%;}
@@ -53,7 +67,7 @@ body.template-hp {
     #video a {display: block; width: 100%; height: 53px;}
 
     #players{background: @white;
-        .bx-controls{width: 157px; background:@light-grey; display: inline; float: right;
+        .bx-controls{width: 157px; background:@light-grey; display: inline; float: left;
              a{width:50%;text-indent:-9999px;height:96px; display: block;}
             .bx-prev{background:url('images/arrow.jpg') no-repeat 1px -96px;float:left;}
             .bx-prev:hover{background-position:1px 0px}
@@ -61,24 +75,40 @@ body.template-hp {
             .bx-next:hover{background-position:-76px 0px;}
         }
         .our, .player-name{background: @white;}
+        .all-team {float: left;}
     }
 
     #ttb{
         #twitter a{ border-bottom: 0px; padding: 0px;}
-        #twitter .col-xs-12, #partners .col-xs-12, #classifica .col-xs-12 {padding: 0px;}
-        .container {display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden;
-            .col-4{flex: 1;}
-        }
 
-    }
-    #partners{background: @light-grey; border-bottom: 3px solid @red;
-        li {float:left;}
-    }
-    #classifica{border-bottom: 3px solid lighten(@red, 20%);
-        h3{background: lighten(@darkest-gey, 20%);}
-        tr td{ color: @light-grey; }
-        tr:nth-child(odd) {background-color: @darkest-gey;}
-        tr:nth-child(even){background-color: lighten(@darkest-gey, 20%); }
-        .t-c, th {color: @red;}
+        #partners{background: @light-grey; border-bottom: 3px solid @red;
+            li {float:left;}
+            .sp-img { text-align: center; }
+        }
+        #classifica{
+            .liga-t{border-bottom: 3px solid lighten(@red, 20%);
+                td, th{padding: 0px 5px;}
+            }
+            h3{background: lighten(@darkest-gey, 20%);}
+            tr td{ color: @light-grey; }
+            tr:nth-child(odd) {background-color: @darkest-gey;}
+            tr:nth-child(even){background-color: lighten(@darkest-gey, 20%); }
+            .t-c, th {color: @red;}
+        }
     }
 }
+
+#mainnavigation{
+    .navbar{border-bottom:0px; z-index:5; position: absolute; background-color: @sitenav-bg;}
+    .navbar-brand{position: absolute; top: 0px; z-index: 5;}
+    .nav{padding-left: 160px; font-size: 120%;
+        li > a { color: @light-grey; }
+    }
+    .navbar-collapse.in {overflow: hidden;}
+    .navbar-toggle {border-color: @white; color: @white;}
+    .navbar-toggle:before{content: "Menu";}
+    //#portal-top .plone-navbar{background: transparent; box-shadow: none;}
+    .plone-navbar-nav > .selected > a, .plone-nav > li > a:hover, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected, .plone-nav > li > a:focus{ background-color: darken(@sitenav-bg, 20%); color: white;}
+    .navbar-nav { text-transform: uppercase}
+}
+@import 'responsive.less';
