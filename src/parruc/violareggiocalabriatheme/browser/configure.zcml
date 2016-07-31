@@ -11,6 +11,15 @@
       layer="parruc.violareggiocalabriatheme.interfaces.IParrucViolareggiocalabriathemeLayer"
       />
 
+  <browser:page
+      for="*"
+      name="portal_tabs_view"
+      class=".navigation.CatalogNavigationTabs"
+      permission="zope.Public"
+      allowed_attributes="topLevelTabs"
+      layer="parruc.violareggiocalabriatheme.interfaces.IParrucViolareggiocalabriathemeLayer"
+      />
+
   <!-- Publish static files -->
   <browser:resourceDirectory
       name="parruc.violareggiocalabriatheme"

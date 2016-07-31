@@ -17,7 +17,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/" tal:attributes="href context/@@plone_portal_state/portal_url;">
-            <img src="++resource++parruc.violareggiocalabriatheme/images/logo.png" alt="" />
+            <img src="++resource++parruc.violareggiocalabriatheme/images/logo-neg.png" alt="" />
         </a>
       </div>
 
@@ -30,12 +30,39 @@
                   tal:attributes="id string:portaltab-${tid};
                                   class python:selected_tab==tid and 'selected' or nothing">
                   <a href=""
+                     tal:condition="not:tab/children"
                      tal:content="tab/name"
                      tal:attributes="href tab/url;
                                      title tab/description|nothing;
                                      target tab/link_target|nothing;">
                     Tab Name
                   </a>
+                  <tal:block  tal:condition="tab/children">
+                      <a tal:content="tab/name"
+                         href="#"
+                         class="dropdown-toggle"
+                         data-toggle="dropdown"
+                         role="button"
+                         aria-haspopup="true"
+                         aria-expanded="false">
+                          Dropdown <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <tal:subtabs tal:repeat="sub tab/children">
+                              <li tal:define="sub_tid sub/id"
+                                  tal:attributes="id string:portaltab-${sub_tid};
+                                                  class python:selected_tab==sub_tid and 'selected' or nothing">
+                                  <a href=""
+                                     tal:content="sub/name"
+                                     tal:attributes="href sub/url;
+                                                     title sub/description|nothing;
+                                                     target sub/link_target|nothing;">
+                                    Tab Name
+                                  </a>
+                              </li>
+                          </tal:subtabs>
+                      </ul>
+                  </tal:block>
               </li>
             </tal:tabs>
         </ul>
