@@ -23,6 +23,7 @@
 
 /* GENERIC */
 #main-container {background-color: @white; }
+#content {margin-top: 200px; }
 body{  background: @base-color;
   background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
   background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
@@ -51,6 +52,7 @@ body.template-edit {background-color: @white;}
 
 /* HP */
 body.template-hp {
+    #content {margin-top: 0px; }
     #portal-breadcrumbs {display: none;}
     #main-container {background-color: transparent; }
     section#m-a-n {margin-top: -115px; z-index: 4;
@@ -120,7 +122,7 @@ body.template-hp {
     .navbar-collapse.in {overflow: hidden;}
     .navbar-toggle {border-color: @white; color: @white;}
     .navbar-toggle:before{content: "Menu";}
-    .nav>li.selected>a, .nav>li>a:focus, .nav>li>a:hover{ background-color: @sitenav-link-hover-bg; color: @white;}
+    .nav>li.open>a, .nav>li.selected>a, .nav>li>a:focus, .nav>li>a:hover, .nav>li.open>ul>li>a:hover,{ background-color: @sitenav-link-hover-bg; color: @white;}
     .navbar-nav { text-transform: uppercase}
 }
 @import 'responsive.less';
