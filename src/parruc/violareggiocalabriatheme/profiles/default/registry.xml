@@ -49,6 +49,13 @@
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/modernizr.min.js</value>
     </records>
 
+    <records prefix="plone.resources/barceloneta"
+             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="css">
+          <element>++resource++parruc.violareggiocalabriatheme/less/barceloneta/barceloneta.less</element>
+       </value>
+    </records>
+
     <records prefix="plone.resources/violareggiocalabria"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/violareggiocalabria.js</value>
@@ -70,6 +77,7 @@
           <element>jquery.prettyphoto</element>
           <element>jquery.scrollable</element>
           <element>bootstrap</element>
+          <element>barceloneta</element>
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
