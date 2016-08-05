@@ -1,16 +1,33 @@
 body.template-view.portaltype-giocatore{
     .player-images {position:relative;}
-    .player-image {position:absolute; right: 15px; top: 0px; border: 4px solid @red;}
-    .player-name {position: absolute; right: 330px; top: 0px; background: transparent; font-weight: bold; text-align: right;
+    .player-image {position:absolute; right: 15px; top: 0px; z-index: 2;
+        img{border: 4px solid @red;}
+        .white-box-wrapper {margin-top: 4px;}
+        .white-border {border-right: 25px solid @white; border-bottom: 25px solid transparent; height:0px; display: inline-block; position:relative; left: 8px;}
+        .white-box {width: 275px; float: right; height:25px; background-color: @white;}
+    }
+    .player-name {position: absolute; right: 330px; top: 25px; background: transparent; font-weight: bold; text-align: right;
         .orange {color: @red; display: block; font-size: 200%;}
         .white {color: @white;  display: block;  font-size: 175%;}
     }
-    .diagonal-border{ border-right: 200px solid @dark-grey; border-bottom: 200px solid transparent; height:0px; display: inline-block; position: absolute;}
-    .diagonal-content-wrapper{background-color: @dark-grey; margin-left:200px; height: 200px;}
-    .diagonal-content{color: @white;}
+    .bio-border{ border-right: 150px solid @dark-grey; border-bottom: 150px solid transparent; height:0px; display: inline-block; position: absolute;}
+    .bio-content-wrapper{background-color: @dark-grey; margin-left:150px; height: 150px;}
+    .bio-content{color: @white;}
     .bio {font-size: 200%;
         .grey{color: @darkest-gey;}
         .white{color: @white;}
     }
-    .role{font-size: 500%; color: @white; float: right; margin-right: 315px;}
+    .role{font-size: 500%; color: @white; float: right; margin-right: 315px; margin-bottom: 15px;}
+    .nextprev{ margin-top: 10px;
+        .text-right {text-align:right;}
+        .text-left {text-align:left;}
+        .next {border-left: 25px solid @red; border-bottom: 50px solid transparent; height:0px; display: inline-block;}
+        .prev {border-right: 25px solid @red; border-bottom: 50px solid transparent; height:0px; display: inline-block;}
+        .prev-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; position:relative; left:-3px;}
+        .next-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; position:relative; right:-3px;}
+    }
+    .stats-table{ width: 94%; font-size: 150%; margin: 15px 2%;
+        th{ color: @red; font-weight: bold; border: 1px solid @darkest-gey; text-align:center;}
+        td{ border: 1px solid @darkest-gey; text-align:center;}
+    }
 }
