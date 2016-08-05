@@ -14,33 +14,38 @@
                      previous view/previous" tal:condition="python:previous is not None or next is not None">
 
       <div class="row">
-        <div class="text-right col-xs-12 col-sm-6" tal:condition="previous">
-          <span class="prev"></span>
-          <span class="prev-link-wrapper">
+        <div class="text-right col-xs-6">
+          <tal:block tal:condition="previous">
+            <span class="prev-link-wrapper">
               <a title="Go to previous item" i18n:attributes="title title_previous_item" tal:attributes="href previous/url">
                 <span i18n:translate="label_previous_item">
-                  Previous:
-                  <span i18n:name="itemtitle" tal:replace="previous/title"></span>
-              </span>
-            </a>
-          </span>
-      </div>
+                  Previous
+                  <span i18n:name="itemtitle" class="itemtitle" tal:content="previous/title"></span>
+                </span>
+              </a>
+            </span>
+            <span class="prev"></span>
+          </tal:block>
+        </div>
 
-      <div class="text-left col-xs-12 col-sm-6" tal:condition="next">
-        <span class="next-link-wrapper">
-          <a title="Go to next item" i18n:attributes="title title_next_item" tal:attributes="href next/url">
-            <span i18n:translate="label_next_item">
-              Next:
-              <span i18n:name="itemtitle" tal:replace="next/title"></span>
-          </span>
-        </a>
-        </span>
-        <span class="next"></span>
+        <div class="text-left col-xs-6">
+          <tal:block tal:condition="next">
+            <span class="next-link-wrapper">
+              <a title="Go to next item" i18n:attributes="title title_next_item" tal:attributes="href next/url">
+                <span i18n:translate="label_next_item">
+                  Next
+                  <span i18n:name="itemtitle" class="itemtitle" tal:content="next/title"></span>
+                </span>
+              </a>
+            </span>
+            <span class="next"></span>
+
+          </tal:block>
+        </div>
+
+      </div>
     </div>
 
-  </div>
-</div>
-
-</tal:block>
+  </tal:block>
 
 </div>

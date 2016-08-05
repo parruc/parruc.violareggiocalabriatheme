@@ -5,19 +5,29 @@
 @import 'variables.less';
 @import 'homepage.less';
 @import 'giocatore.less';
+@import 'responsive.less';
 
 /* GENERIC */
 body{  background: @base-color;
+  .portalMessage {text-align: center;}
   #main-container {background-color: @white; }
   .label {color:@darkest-gey; }
   background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
   background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
   .outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}
   .hiddenStructure {display: none;}
+  .orange-head {color: @red; display: block; font-size: 200%;}
+  .white-head {color: @white;  display: block;  font-size: 175%;}
+  .grey-head {.white-head; color:@darkest-gey}
 }
 
-body.template-edit {background-color: @white;}
-.container { padding:0px; }
+body.template-edit {
+    .navbar-brand {display: none;}
+}
+#portal-breadcrumbs {display: none; }
+h1.documentFirstHeading {text-align: center;}
+#content{ background-color: @white; padding-top: 100px;}
+.container { padding:0px;}
 .no-padding-right{padding-right: 0px;}
 .no-padding-left{padding-left: 0px;}
 .no-padding{.no-padding-left; .no-padding-right; }
@@ -25,10 +35,10 @@ body.template-edit {background-color: @white;}
 .padding-left{padding-left: 15px;}
 .padding{.padding-left; .padding-right; }
 #content-core{ background-color: @white; }
-.table-row {display: table; border-collapse: separate;
+.table-row {display: table; border-collapse: separate; width: 100%;
     div[class^="col-"]{ display: table-cell; float:none;}
 }
-#full-width-slides{margin-top: 40px;
+#full-width-slides{
     .caption{position: absolute; top: 20%; color: @white;
         h1 {margin: 0px 20px 20px 160px;}
     }
@@ -36,7 +46,7 @@ body.template-edit {background-color: @white;}
 }
 
 #mainnavigation{
-    .navbar{border-bottom:0px; z-index:5; position: absolute; background-color: @sitenav-bg;}
+    .navbar{margin-bottom:0px; z-index:5; background-color: @sitenav-bg;}
     .navbar-brand{position: absolute; top: 0px; z-index: 5;}
     .nav{padding-left: 160px; font-size: 120%;
         li > a { color: @light-grey; }
