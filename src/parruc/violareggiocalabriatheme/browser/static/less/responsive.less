@@ -1,34 +1,20 @@
 @media only screen and (max-width: 1200px) {
     body.template-giocatori{
-        .grey-box {width: 175px;}
-        .grey-border {left:0px;}
+        .grey-box {
+            a {color: @white;}
+        }
     }
     body.template-view.portaltype-giocatore{
         .bio {font-size: 150%; }
         .role {width: 100%; text-align: left; margin: 0px; font-size: 250%;}
-        .player-name{right: 275px;}
-        .player-image {width: 250px;
-            .white-box {width: 225px;}
-            .white-border {left:0px;}
-        }
+        .player-name{right: 80%;}
     }
 }
 
 @media only screen and (max-width: 992px) {
-    body.template-giocatori{
-        h1 {
-            .orange-head {font-size: 125%;}
-            .white-head {font-size: 100%;}
-        }
-        .grey-box {width: 125px;}
-    }
     body.template-view.portaltype-giocatore{
         .player-name{right: 240px;}
-        .player-image {width: 200px;
-            .white-box {width: 175px;}
-            .white-border {left:0px;}
-        }
-
+        .player-image { width:325px; }
     }
 }
 
@@ -37,16 +23,25 @@
     div.table-row div[class^="col-"]{ display: block;}
     .orange-head { font-size: 125%; }
     .white-head {font-size: 100%;}
+    body.template-giocatori{
+        .roster-player{
+            img, .grey-box-wrapper{ float:left; margin-left: 15px;}
+        }
+        .roster-head { margin-top: 0px;
+            span{ display: inline;}
+        }
+    }
 
     body.template-view.portaltype-giocatore{
-        .player-image { position: static; margin: auto; width: 300px;}
-        .player-name { position: static; margin-left: 120px; padding:0px 20px;
+        .player-image-wrapper{ position: static;
+            .player-image {display: block; margin: auto; margin-right: 0px;}
+        }
+        .player-name { display: block;
             span{display: inline;}
-            .white-head{color: @darkest-gey;}
         }
         .nextprev{
             .text-right, .text-left {padding: 0px;}
-            .itemtitle {display: block;}
+            .itemtitle {display: none;}
         }
     }
 //    .outer-wrapper {overflow-x: hidden;}
