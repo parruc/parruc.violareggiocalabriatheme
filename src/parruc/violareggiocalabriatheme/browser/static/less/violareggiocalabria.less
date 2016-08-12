@@ -5,53 +5,55 @@
 @import 'variables.less';
 @import 'homepage.less';
 @import 'giocatore.less';
-@import 'responsive.less';
 
 /* GENERIC */
-body{  background: @bg;
-  .img-dark {background-color: @darkest-gey; opacity:0.6;}
-  .portalMessage {text-align: center;}
-  #main-container {background-color: @white; }
-  .label {color:@darkest-gey; }
-  /*background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
-  background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
-  .outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}*/
-  .hiddenStructure {display: none;}
-  .orange-head {color: @red; display: block; font-size: 200%;}
-  .white-head {color: @white;  display: block;  font-size: 175%;}
-  .grey-head {.white-head; color:@darkest-gey}
-    #portal-breadcrumbs {display: none; }
-    h1.documentFirstHeading {text-align: center;}
-    #content{ background-color: @bg; padding-top: 100px;}
-    .container { padding:0px;}
-    .no-padding-right{padding-right: 0px;}
-    .no-padding-left{padding-left: 0px;}
-    .no-padding{.no-padding-left; .no-padding-right; }
-    .padding-right{padding-right: 15px;}
-    .padding-left{padding-left: 15px;}
-    .padding{.padding-left; .padding-right; }
-    #content-core{ background-color: @bg; }
-    .table-row {display: table; border-collapse: separate; width: 100%;
-        div[class^="col-"]{ display: table-cell; float:none;}
-    }
-    .tab {font-family: headline; font-size: 18px;}
-    .vcenter { display: inline-block; vertical-align: bottom; float: none;}
+body{  background: @bg;}
+.img-dark {background-color: @darkest-gey;
+    img {opacity:0.6;}
+}
+.portalMessage {text-align: center;}
+#main-container, .documentFirstHeading {background-color: @white; }
+.label {color:@darkest-gey; }
+/*background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
+background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);*/
+.outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}
+.hiddenStructure {display: none;}
+.orange-head {color: @red; display: block; font-size: 200%;}
+.white-head {color: @white;  display: block;  font-size: 175%;}
+.grey-head {.white-head; color:@darkest-gey}
+#portal-breadcrumbs {display: none; }
+h1.documentFirstHeading {text-align: center;}
+#content{ background-color: @bg; padding-top: 60px;}
+.container { padding:0px;}
+.no-padding-right{padding-right: 0px;}
+.no-padding-left{padding-left: 0px;}
+.no-padding{.no-padding-left; .no-padding-right; }
+.padding-right{padding-right: 15px;}
+.padding-left{padding-left: 15px;}
+.padding{.padding-left; .padding-right; }
+#content-core{ background-color: @bg; }
+.table-row {display: table; border-collapse: separate; width: 100%;
+    div[class^="col-"]{ display: table-cell; float:none;}
+}
+.tab {font-family: din-condensed; font-size: 18px;}
+.vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
-    #full-width-slides{
-        .caption{position: absolute; top: 20%; color: @white;
-            h1 {margin: 0px 20px 20px 160px;}
-        }
-        .flex-control-paging{position: absolute; bottom: 10%; z-index:4;}
+#full-width-slides{
+    .flexslider .slides > li {background-color: @darkest-gey;}
+    .caption{position: absolute; top: 20%; color: @white;
+        h1 { text-transform: none;  width: 50%; margin: 10px auto;}
     }
+    a.btn { padding: 3px 10px; }
+    img { min-height: 150px;}
 }
 
 body.template-edit {
     .navbar-brand {display: none;}
 }
 #mainnavigation-wrapper {padding:0px;}
-#mainnavigation{font-family: headline; font-size: 18px;
+#mainnavigation{font-family: din-condensed; font-size: 18px;
     .navbar{margin-bottom:0px; z-index:5; background-color: @sitenav-bg; border-radius: 0px;}
-    .navbar-brand{position: absolute; top: 0px; z-index: 5; padding: 0px;}
+    .navbar-brand{position: absolute; top: -10px; z-index: 5; padding: 0px;}
     .nav{padding-left: 160px; font-size: 120%;
         li > a { color: @light-grey; }
     }

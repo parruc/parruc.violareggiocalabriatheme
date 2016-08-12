@@ -9,9 +9,13 @@
         .role {width: 100%; text-align: left; margin: 0px; font-size: 250%;}
         .player-name{right: 80%;}
     }
+    body.template-hp {
+        section#m-a-n .match .teams .scores .score{ padding:0px 5px; font-size: 150%; }
+    }
 }
 
 @media only screen and (max-width: 992px) {
+    #mainnavigation .navbar-brand img { width: 125px;}
     body.template-view.portaltype-giocatore{
         .player-name{right: 240px;}
         .player-image { width:325px; }
@@ -19,7 +23,10 @@
 }
 
 @media only screen and (max-width : 767px) {
-    #mainnavigation .navbar-brand img { width: 120px;}
+    .table-row { display: block;
+        div[class^="col-"] { display: block; float: left;}
+    }
+    #mainnavigation .navbar-brand img { width: 100px;}
     div.table-row div[class^="col-"]{ display: block;}
     .orange-head { font-size: 125%; }
     .white-head {font-size: 100%;}
@@ -51,19 +58,19 @@
     }
 //    .outer-wrapper {overflow-x: hidden;}
     .all-team {width: 100%;}
-    body.template-hp section#m-a-n .tab, body.template-hp section#m-a-n .tab-small
-    .news-container .tab {margin-left: 25px;}
-    .our h3{font-size: 125%;}
-    .table-row { display: block;
-        div[class^="col-"] { display: block; float: left;}
+    body.template-hp {
+        .news-container .tab {margin-left: 25px;}
+        .our h3{font-size: 125%;}
+        #video .no-padding-right{padding-right: 15px;}
+        #m-a-n > .row > .no-padding-right{padding-right:15px;}
     }
+
     #full-width-slides{
         .flex-control-paging {display: none;}
-        .caption{top: 10%;
-            h1 {margin: 0px 10px 10px 120px; font-size: 150%;}
-            .read-more{margin-left: 120px;}
+        .caption{top: 0px; padding-left: 100px; padding-right: 10px; margin: 5px auto;
+            h1{ width:100%; font-size: 175%;}
         }
     }
-    #video .no-padding-right{padding-right: 15px;}
-    #m-a-n > .row > .no-padding-right{padding-right:15px;}
+
+
 }
