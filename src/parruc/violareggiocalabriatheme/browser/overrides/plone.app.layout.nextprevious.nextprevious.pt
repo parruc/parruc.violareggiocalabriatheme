@@ -18,9 +18,8 @@
           <tal:block tal:condition="previous">
             <span class="prev-link-wrapper">
               <a title="Go to previous item" i18n:attributes="title title_previous_item" tal:attributes="href previous/url">
-                <span i18n:translate="label_previous_item">
-                  Previous
-                  <span i18n:name="itemtitle" class="itemtitle" tal:content="previous/title"></span>
+                <span>
+                  Precedente
                 </span>
               </a>
             </span>
@@ -32,9 +31,8 @@
           <tal:block tal:condition="next">
             <span class="next-link-wrapper">
               <a title="Go to next item" i18n:attributes="title title_next_item" tal:attributes="href next/url">
-                <span i18n:translate="label_next_item">
-                  Next
-                  <span i18n:name="itemtitle" class="itemtitle" tal:content="next/title"></span>
+                <span>
+                  Successivo
                 </span>
               </a>
             </span>
