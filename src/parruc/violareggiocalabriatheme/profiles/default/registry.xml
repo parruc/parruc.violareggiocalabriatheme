@@ -75,8 +75,6 @@
              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
       <value key="resources">
           <element>modernizr</element>
-          <element>bootstrap</element>
-          <element>barceloneta</element>
           <element>jquery.jqueryui</element>
           <element>jquery.scrollable</element>
           <element>jquery.bxslider</element>
@@ -84,11 +82,13 @@
           <element>jquery.countdown</element>
           <element>jquery.flexslider</element>
           <element>jquery.prettyphoto</element>
+          <element>bootstrap</element>
+          <element>barceloneta</element>
           <element>violareggiocalabria</element>
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
-      <!--value key="merge_with">default</value-->
+      <!--value key="merge_with">default</valuez>
       <value key="last_compilation"></value>
     </records>
 </registry>
