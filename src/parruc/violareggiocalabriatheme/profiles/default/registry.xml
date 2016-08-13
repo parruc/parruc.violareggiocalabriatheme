@@ -96,7 +96,7 @@
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
-      <!--value key="merge_with">default</valuez>
+      <!--value key="merge_with">default</value-->
       <value key="last_compilation"></value>
     </records>
 </registry>
