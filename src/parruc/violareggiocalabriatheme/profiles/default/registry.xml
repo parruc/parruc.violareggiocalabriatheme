@@ -63,7 +63,7 @@
 
     <records prefix="plone.resources/bootstrap"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="js">++resource++parruc.violareggiocalabriatheme/less/bootstrap.css</value>
+       <value key="js">++resource++parruc.violareggiocalabriatheme/js/bootstrap.min.js</value>
        <value key="css">
           <element>++resource++parruc.violareggiocalabriatheme/less/bootstrap.min.css</element>
        </value>
