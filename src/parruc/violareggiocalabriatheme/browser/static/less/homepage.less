@@ -1,10 +1,10 @@
 body.template-hp {
     #content-core {background-color: @white;}
     #portal-breadcrumbs {display: none;}
-    section#m-a-n {margin-top: -80px; z-index: 4;
+    section#m-a-n {margin-top: -76px; z-index: 4;
         .news-container {position: relative;
 	           .r-box-n article{
-                   h3 a {color:@dark-grey; }
+                   h3 a {color:@dark-grey; font-size: 90%;}
                    p{color:@grey;}
                    div.r-box-n{background-color: @white;}
                    span.date-n{font-weight: bold;}
@@ -16,9 +16,9 @@ body.template-hp {
         .match {color: @white; font-size: 125%; text-align: center;
             .teams{
                 .scores{line-height: 125px;
-                    .score{font-weight:normal; font-size:250%; padding: 0px 10px;}
+                    .score{font-weight:bold; font-size:60px; padding: 0px 10px;}
                 }
-                .team-logo {text-align:center; margin-top: -35px;
+                .team-logo {text-align:center; margin-top: -30px; height:136px;
                     img {margin: auto;}
                 }
             }
@@ -26,6 +26,9 @@ body.template-hp {
                 .team-name{font-size: 50%; font-weight: bold;}
                 .team-league{font-size: 25%; color:@light-red; fot-size: 50%;}
             }
+        }
+        .a-games {
+            .d-g {font-weight: normal;}
         }
         .countdown{padding: 10px; color: @light-grey; background-color: @darkest-grey;  text-align: center; color: @dark-grey;
             .sup {position: relative; bottom: 30px; font-size: 35%;}
@@ -43,6 +46,7 @@ body.template-hp {
         .ui-state-active, ui-state-hover a{
             h4{ color: @white;}
             .video-category {color: @light-red;}
+            .icon-play {color: @white;}
         }
         .video-tab{
             .tab {border-bottom: 0px; border-top: 50px solid @red;}

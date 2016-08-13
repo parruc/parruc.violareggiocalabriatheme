@@ -45,7 +45,11 @@ h1.documentFirstHeading {text-align: center;}
 .vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
 #full-width-slides{
-    .flexslider .slides > li {background-color: @darkest-grey;}
+    .flexslider { border: 0px;
+        .slides > li {background-color: @darkest-grey;}
+        .flex-custom-pager li{padding: 0px 2px;}
+    }
+    .read-more{margin-top: 20px;}
     .caption{position: absolute; top: 20%; color: @white;
         h1 { text-transform: none;  width: 50%; margin: 10px auto;}
     }
