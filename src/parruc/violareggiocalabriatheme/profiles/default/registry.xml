@@ -75,12 +75,6 @@
       <value key="resources">
           <!--element>isotope</element-->
           <element>modernizr</element>
-          <element>jquery.jqueryui</element>
-          <element>jquery.bxslider</element>
-          <element>jquery.matchheight</element>
-          <element>jquery.countdown</element>
-          <element>jquery.flexslider</element>
-          <element>jquery.prettyphoto</element>
           <element>jquery.scrollable</element>
           <element>bootstrap</element>
           <element>barceloneta</element>
@@ -94,6 +88,12 @@
     <records prefix="plone.bundles/violareggiocalabria"
              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
       <value key="resources">
+          <element>jquery.jqueryui</element>
+          <element>jquery.bxslider</element>
+          <element>jquery.matchheight</element>
+          <element>jquery.countdown</element>
+          <element>jquery.flexslider</element>
+          <element>jquery.prettyphoto</element>
           <element>violareggiocalabria</element>
       </value>
       <value key="depends">violareggiocalabria-libs</value>
