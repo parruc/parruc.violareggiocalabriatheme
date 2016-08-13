@@ -1,4 +1,17 @@
 @media only screen and (max-width: 1200px) {
+    body.template-hp {
+        section#m-a-n{
+            .match .teams .scores .score{ padding:0px 5px; font-size: 150%; }
+            .countdown{
+                .sup {font-size: 30%; bottom: 25px; }
+                .label{font-size: 100%;}
+                #countdown {font-size: 275%;}
+            }
+        }
+        section#players{
+            .all-team {width: 100%;}
+        }
+    }
     body.template-giocatori{
         .grey-box {
             a {color: @white;}
@@ -9,13 +22,19 @@
         .role {width: 100%; text-align: left; margin: 0px; font-size: 250%;}
         .player-name{right: 80%;}
     }
-    body.template-hp {
-        section#m-a-n .match .teams .scores .score{ padding:0px 5px; font-size: 150%; }
-    }
 }
 
 @media only screen and (max-width: 992px) {
     #mainnavigation .navbar-brand img { width: 125px;}
+    body.template-hp {
+        section#m-a-n {
+            .countdown{
+                .sup {font-size: 25%; bottom: 20px; }
+                .label{font-size: 90%; clear: none; padding: 0px;}
+                #countdown {font-size: 225%;}
+            }
+        }
+    }
     body.template-view.portaltype-giocatore{
         .player-name{right: 240px;}
         .player-image { width:325px; }
@@ -30,6 +49,15 @@
     div.table-row div[class^="col-"]{ display: block;}
     .orange-head { font-size: 125%; }
     .white-head {font-size: 100%;}
+
+    body.template-hp {
+        section#m-a-n {
+            .countdown{
+                .label{font-size: 100%; float:none; clear: none;}
+                .label:first{padding-right: 20px;}
+            }
+        }
+    }
     body.template-giocatori{
         .roster-player{
             img, .grey-box-wrapper{ float:left; margin-left: 15px;}
@@ -61,8 +89,8 @@
     body.template-hp {
         .news-container .tab {margin-left: 25px;}
         .our h3{font-size: 125%;}
-        #video .no-padding-right{padding-right: 15px;}
-        #m-a-n > .row > .no-padding-right{padding-right:15px;}
+        .no-padding-right{padding-right: 15px!important; }
+        .no-padding{padding-right:15px!important;}
     }
 
     #full-width-slides{

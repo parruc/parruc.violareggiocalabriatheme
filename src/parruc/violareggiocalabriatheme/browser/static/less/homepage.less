@@ -3,7 +3,12 @@ body.template-hp {
     #portal-breadcrumbs {display: none;}
     section#m-a-n {margin-top: -115px; z-index: 4;
         .news-container {position: relative;
-	           .r-box-n article div.r-box-n{background-color: @white;}
+	           .r-box-n article{
+                   h3 a {color:@dark-grey; }
+                   p{color:@grey;}
+                   div.r-box-n{background-color: @white;}
+                   span.date-n{font-weight: bold;}
+               }
     	}
         .tab, .tab-small {z-index: 5; position: relative; top: 2px;}
         .tab-small {z-index: 4; opacity: 0.6;}
@@ -22,16 +27,38 @@ body.template-hp {
                 .team-league{font-size: 25%; color:@light-red; fot-size: 50%;}
             }
         }
-        .countdown{padding-top: 20px; padding-bottom: 20px; font-size: 120%; color: @light-grey; background-color: @darkest-gey;  text-align: center;
-            .sup { font-size: smaller; }
-            .label{text-transform: uppercase;}
-            #countdown {font-size: 130%;}
+        .countdown{padding: 10px; color: @light-grey; background-color: @darkest-grey;  text-align: center; color: @dark-grey;
+            .sup {position: relative; bottom: 30px; font-size: 35%;}
+            .label{text-transform: uppercase; float: left; clear: left; color: @dark-grey; font-weight: bold; font-size: 120%;}
+            #countdown {font-size: 320%; font-weight: bold;}
         }
     }
 
-    #video a {display: block; width: 100%; height: 53px;}
+    #video{
+        a {display: block; width: 100%; height: 53px; text-decoration: none;
+            .icon-play{height:53px; float: left; font-size: 250%; color: @darker-grey;}
+            h4{font-weight: bold; text-transform: none; color: @darker-grey;}
+            .video-category{color: @dark-grey; font-size: 75%;}
+        }
+        .ui-state-active, ui-state-hover a{
+            h4{ color: @white;}
+            .video-category {color: @light-red;}
+        }
+        .video-tab{
+            .tab {border-bottom: 0px; border-top: 50px solid @red;}
+            h2{margin:0px; line-height: 50px; position:relative; bottom: 50px; font-size: 18px;}
+        }
+        .tab-content {border: 3px solid @white;
+            .video-inner-title {background-color: @darker-grey; color: @white; font-weight: bold; padding: 5px;}
+        }
+    }
 
     #players{background: @white;
+        .players-slider {
+            .slide img{
+                border-right: 1px solid @white;
+            }
+        }
         .bx-controls{width: 157px; background:@light-grey; display: inline; float: left;
              a{width:50%;text-indent:-9999px;height:96px; display: block;}
             .bx-prev{background:url('images/arrow.jpg') no-repeat 1px -96px;float:left;}
@@ -39,26 +66,31 @@ body.template-hp {
             .bx-next{background:url('images/arrow.jpg') no-repeat -76px -96px; float: right;}
             .bx-next:hover{background-position:-76px 0px;}
         }
-        .our, .player-name{background: @white;}
-        .all-team {float: left;}
+        .our, .player-name{background: @white;
+            h3 .bigger {font-size: 140%; font-weight: bold;}
+        }
+        .all-team {float: left; width: 228px}
     }
 
     #ttb{
-        #twitter a{ border-bottom: 0px; padding: 0px;}
+        #twitter{
+            .tweet{font-weight: bold; font-size: 115%;
+                a{ border-bottom: 0px; padding: 0px;}
+            }
+        }
 
-        #partners{background: @light-grey; border-bottom: 3px solid @red;
+        #partners{background: @grey; border-bottom: 3px solid @red;
             li {float:left;}
             .sp-img { text-align: center; }
         }
-        #classifica{
-            .liga-t{border-bottom: 3px solid lighten(@red, 20%);
-                td, th{padding: 0px 5px;}
-            }
-            h3{background: lighten(@darkest-gey, 20%);}
-            tr td{ color: @light-grey; }
-            tr:nth-child(odd) {background-color: @darkest-gey;}
-            tr:nth-child(even){background-color: lighten(@darkest-gey, 20%); }
-            .t-c, th {color: @red;}
+        #classifica{border-bottom: 3px solid lighten(@red, 20%); background: @ranking-table-even;
+            td, th{padding: 0px 5px;}
+            h3{background: @ranking-table-even;}
+            tr td{ color: @white; font-weight: bold;}
+            tr:nth-child(odd) {background-color: @ranking-table-odd;}
+            tr:nth-child(even){background-color: @ranking-table-even; }
+            .t-c {color: @red;}
+            th {color: @dark-grey;}
         }
     }
 }

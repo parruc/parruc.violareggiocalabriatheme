@@ -7,7 +7,7 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
                                               controlsContainer:$(".flex-custom-pager")});
     ///// Countdown
     $('#countdown').countdown($('#countdown').data("deadline"), function(event) {
-        $(this).html(event.strftime("%D <span class='sup'>G</span> %H <span class='sup'>H</span> %M <span class='sup'>M</span> %S <span class='sup'>S</span>"));
+        $(this).html(event.strftime("%D<span class='sup'>G</span>:%H<span class='sup'>H</span>:%M<span class='sup'>M</span>:%S<span class='sup'>S</span>"));
     });
 
     $(".img-responsive").removeAttr("width").removeAttr("height");
@@ -50,9 +50,12 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
       menub.slideToggle();
   });*/
 
+
+    $('.same-height').matchHeight();
+
     $("#v-tabs, #tab").tabs();
     $('.players-slider').bxSlider({
-      slideWidth: 157,
+      slideWidth: 199,
       minSlides: 2,
       maxSlides: 4,
       nextSelector: ".bx-controls",

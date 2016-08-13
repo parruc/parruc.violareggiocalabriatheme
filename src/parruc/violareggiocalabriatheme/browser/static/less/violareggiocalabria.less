@@ -8,19 +8,24 @@
 
 /* GENERIC */
 body{  background: @bg;}
-.img-dark {background-color: @darkest-gey;
+.img-dark {background-color: @darkest-grey;
     img {opacity:0.6;}
+}
+.a-games ul{
+    li{ color: @darker-grey; font-weight: bold; font-size: 120%; border-bottom: 1px solid @table-border; padding: 12px 0px;
+        .d-g{font-size: 100%;}
+    }
 }
 .portalMessage {text-align: center;}
 #main-container, .documentFirstHeading {background-color: @white; }
-.label {color:@darkest-gey; }
+.label {color:@darkest-grey; }
 /*background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
 background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);*/
 .outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}
 .hiddenStructure {display: none;}
 .orange-head {color: @red; display: block; font-size: 200%;}
 .white-head {color: @white;  display: block;  font-size: 175%;}
-.grey-head {.white-head; color:@darkest-gey}
+.grey-head {.white-head; color:@darkest-grey}
 #portal-breadcrumbs {display: none; }
 h1.documentFirstHeading {text-align: center;}
 #content{ background-color: @bg; padding-top: 60px;}
@@ -39,14 +44,16 @@ h1.documentFirstHeading {text-align: center;}
 .vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
 #full-width-slides{
-    .flexslider .slides > li {background-color: @darkest-gey;}
+    .flexslider .slides > li {background-color: @darkest-grey;}
     .caption{position: absolute; top: 20%; color: @white;
         h1 { text-transform: none;  width: 50%; margin: 10px auto;}
     }
     a.btn { padding: 3px 10px; }
     img { min-height: 150px;}
 }
-
+body.template-default_error_message{
+    #content-core{background-color: @white;}
+}
 body.template-edit {
     .navbar-brand {display: none;}
 }
