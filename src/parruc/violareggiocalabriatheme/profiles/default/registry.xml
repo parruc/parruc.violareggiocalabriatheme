@@ -61,6 +61,14 @@
        </value>
     </records>
 
+    <records prefix="plone.resources/bootstrap"
+             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="js">++resource++parruc.violareggiocalabriatheme/less/bootstrap.css</value>
+       <value key="css">
+          <element>++resource++parruc.violareggiocalabriatheme/less/bootstrap.min.css</element>
+       </value>
+    </records>
+
     <records prefix="plone.resources/violareggiocalabria"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/violareggiocalabria.js</value>
