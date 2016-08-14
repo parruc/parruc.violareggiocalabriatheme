@@ -39,7 +39,11 @@
     <drop css:content=".hero" />
 
     <!-- full-width breadcrumb -->
-    <replace css:content="#portal-breadcrumbs" css:theme="#above-content" />
+    <!--replace css:content="#portal-breadcrumbs" css:theme="#above-content" /-->
+
+    <!-- control panel -->
+    <replace css:content="#viola-controlpanel" css:theme="#below-content" method="raw"/>
+    <drop css:content="#viola-controlpanel" />
 
     <!-- Central column -->
     <replace css:theme="#content-container" method="raw">
