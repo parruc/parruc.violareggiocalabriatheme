@@ -1,13 +1,11 @@
 body.template-giocatori{
-    #content{padding-left: 10%; padding-bottom: 50px;}
     .grey-box-wrapper {margin-top: 5px;}
-    .grey-border {border-right: 25px solid @grey; border-bottom: 25px solid transparent; width:0px; display: inline-block; float: right;}
-    .grey-box {width: 200px; height:25px; background-color: @grey;  float: right; text-align: right; color: @darker-grey; font-size: 90%; padding-right: 5px; line-height: 25px;}
-    .roster-player {margin-top :20px; font-size: 18px;
-        img{border: 3px solid @red;}
-        a, a:hover, a:visited {color: @darkest-grey; }
+    .grey-border {border-right: 25px solid @dark-grey; border-bottom: 25px solid transparent; width:0px; display: inline-block; float: right;}
+    .grey-box {width: 200px; height:25px; background-color: @dark-grey;  float: right;}
+    .roster-player {margin-top :20px; font-size: 17px;
+        a, a:hover, a:visited {color: @darkest-gey; }
     }
-    .roster-head { font-family: din-condensed; margin-top: 90%; font-size: 300%; margin-bottom: 0px;}
+    .roster-head { font-family: din-condensed; margin-top: 90%; font-size: 275%;}
 }
 
 body.template-view.portaltype-giocatore{
@@ -20,32 +18,32 @@ body.template-view.portaltype-giocatore{
         .white-box-wrapper {margin: 4px 5px 0px 0px; position:relative; z-index: 4;}
         .white-border {border-right: 25px solid @white; border-bottom: 25px solid transparent; width:0px; display: inline-block; float: right;}
         .white-box {width: 70%; float: right; height:25px; background-color: @white;  margin-left: -1px;}
-        h1.player-name{ display: inline-block; background-color: transparent; font-family: din-condensed; text-align: right; padding-top: 0px; vertical-align: top; margin-right: 50px;
+        h1.player-name{ display: inline-block; background-color: transparent; font-family: din-condensed; text-align: right; padding-top: 0px; vertical-align: top;
             span {display: block;}
-            .orange-head{font-size: 400%;}
-            .white-head{font-size: 250%;}
+            .orange-head{font-size: 375%;}
+            .white-head{font-size: 225%;}
         }
     }
-    .bio-border{ border-right: 100px solid @dark-grey; border-bottom: 125px solid transparent; width:0px; display: inline-block; position: absolute;}
-    .bio-content-wrapper{background-color: @dark-grey; margin-left:100px; height: 125px;  padding-top: 15px;}
+    .bio-border{ border-right: 125px solid @dark-grey; border-bottom: 125px solid transparent; width:0px; display: inline-block; position: absolute;}
+    .bio-content-wrapper{background-color: @dark-grey; margin-left:124px; height: 125px;  padding-top: 15px;}
     .bio-content{color: @white;}
-    .bio {font-size: 200%;
-        .grey{color: @darkest-grey; text-transform: uppercase; font-size: 80%;}
+    .bio {font-size: 175%;
+        .grey{color: @darkest-gey; text-transform: uppercase; font-weight: bold; font-size: 85%;}
         .white{color: @white;}
     }
-    .role{font-family: din-condensed; font-size: 500%; color: @white; float: right; margin-right: 440px;}
-    .nextprev{ margin-top: 40px; font-family: din-condensed; color: @white; line-height: 50px; font-size: 200%; text-transform: uppercase;
+    .role{font-family: din-condensed; font-size: 450%; color: @white; float: right; margin-right: 400px;}
+    .nextprev{ margin-top: 40px; font-family: din-condensed; color: @white; line-height: 50px; font-size: 175%;
         .text-right {text-align:right; position: relative; right: 10px; }
         .text-left {text-align:left; position: relative; left: 10px;}
         .next {border-left: 25px solid @red; border-bottom: 50px solid transparent; width:0px; display: inline-block; float: left;}
         .prev {border-right: 25px solid @red; border-bottom: 50px solid transparent; width:0px; display: inline-block; float: right;}
-        .prev-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: right;}
-        .next-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: left;}
+        .prev-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: right; margin-left: -1px;}
+        .next-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: left; margin-right: -1px;}
         a, a:hover, a:visited { color: @white;}
     }
     .stats{
-        h2{ color: @red; font-size: 175%; margin-top: 20px; margin-bottom:10px; font-style: italic; font-weight: bold;}
-        .stats-table{ width: 100%; font-size: 150%; margin: 15px 0px%;
+        h2{ color: @red; font-size: 150%; margin-top: 20px; margin-bottom:10px; font-style: italic; font-weight: bold;}
+        .stats-table{ width: 100%; font-size: 125%; margin: 15px 0px%;
             th{ color: @red; font-weight: bold; border: 1px solid @dark-grey; text-align:center;}
             td{ border: 1px solid @dark-grey; text-align:center; color: @white}
         }
