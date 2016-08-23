@@ -3,7 +3,7 @@
 @import 'main.less';
 @import 'bootstrap.min.css';
 @import 'variables.less';
-@import 'homepage.less';
+@import 'hp-and-partite.less';
 @import 'giocatore.less';
 
 /* GENERIC */
@@ -45,11 +45,13 @@ h1.documentFirstHeading {text-align: center;}
 .vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
 #full-width-slides{
+    .flex-direction-nav {margin-top: 100px;}
     ol.flex-control-nav {position: absolute; top: 175px; z-index: 10;
         li {margin: 0px 3px;}
     }
     .flexslider { border: 0px;
         .slides > li {background-color: @darkest-grey;}
+        .slides > li > .flex-direction-nav {display: none;}
     }
     .read-more{margin-top: 15px;}
     .caption{position: absolute; top: 20%; color: @white;

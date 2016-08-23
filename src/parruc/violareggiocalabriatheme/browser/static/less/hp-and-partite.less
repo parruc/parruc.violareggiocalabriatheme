@@ -1,4 +1,4 @@
-body.template-hp {
+body.template-hp, body.template-partite {
     #content-core {background-color: @white;}
     #portal-breadcrumbs {display: none;}
     section#m-a-n {margin-top: -76px; z-index: 4;
@@ -15,8 +15,9 @@ body.template-hp {
         .launch-body {background-color: @dark-grey; padding: 10px;}
         .match {color: @white; font-size: 125%; text-align: center;
             .teams{
-                .scores{line-height: 125px;
-                    .score{font-weight:bold; font-size:60px; padding: 0px 10px;}
+                .scores{line-height: 125px; font-size:60px;
+                    .score{font-weight:bold; }
+                    .score-separator{font-weight:bold; padding: 0px 5px; color:@dark-red;}
                 }
                 .team-logo {text-align:center; margin-top: -30px; height:136px;
                     img {margin: auto;}
@@ -34,6 +35,12 @@ body.template-hp {
             .sup {position: relative; bottom: 30px; font-size: 35%;}
             .label{text-transform: uppercase; float: left; clear: left; color: @dark-grey; font-weight: bold; font-size: 120%;}
             #countdown {font-size: 320%; font-weight: bold;}
+        }
+        .orange-wrapper{background-color: @red; color: @white;
+            .grey-border{ border-right: 40px solid @dark-grey; border-bottom: 50px solid transparent; width:0px; display: inline-block; position: absolute;}
+            .grey-content-wrapper{background-color: @dark-grey; margin-left:39px; height: 50px;}
+            .grey-content{color: @white; text-transform: uppercase;}
+            .match-date { color: @light-red; line-height: 50px; width: 100%; display:block; text-align:center;}
         }
     }
 
