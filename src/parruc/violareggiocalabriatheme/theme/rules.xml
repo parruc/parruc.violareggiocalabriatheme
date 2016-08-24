@@ -42,8 +42,11 @@
     <!--replace css:content="#portal-breadcrumbs" css:theme="#above-content" /-->
 
     <!-- control panel -->
-    <replace css:content="#viola-controlpanel" css:theme="#below-content" method="raw"/>
+    <replace css:content="#viola-controlpanel" css:theme="#viola-controlpanel" method="raw"/>
     <drop css:content="#viola-controlpanel" />
+
+    <replace css:content="#viola-sponsor" css:theme="#viola-sponsor" method="raw"/>
+    <drop css:content="#viola-sponsor" />
 
     <!-- Central column -->
     <replace css:theme="#content-container" method="raw">
