@@ -1,8 +1,9 @@
+body.tempalte-hp .viola-sponsors{ display:none;}
 body.template-hp, body.template-partite {
     #content-core {background-color: @white;}
-    #portal-breadcrumbs {display: none;}
     section#m-a-n {margin-top: -76px; z-index: 4;
         .news-container {position: relative;
+               img {border: 20px solid @white;}
 	           .r-box-n article{
                    h3 a {color:@dark-grey; font-size: 90%;}
                    p{color:@grey;}
@@ -24,7 +25,7 @@ body.template-hp, body.template-partite {
                 }
             }
             .result{text-align:center;
-                .team-name{font-size: 50%; font-weight: bold;}
+                .team-name{font-size: 50%; font-weight: bold; padding: 30px 0px;}
                 .team-league{font-size: 25%; color:@light-red; fot-size: 50%;}
             }
         }
@@ -103,5 +104,18 @@ body.template-hp, body.template-partite {
             .t-c {color: @red;}
             th, th.t-c {color: @dark-grey;}
         }
+    }
+    #played-matches{border-bottom: 3px solid lighten(@red, 20%); color: @darker-grey;
+        tr {border-right: 0px;}
+        td.match-date {color: @dark-grey;}
+        .t-h {background-color: @dark-grey; color: @darker-grey; border-bottom: 10px solid @red; text-transform: uppercase;}
+        .tab {top: 0px;}
+        td, th{padding: 0px 5px; text-align: center;}
+        td.t-c {width: 150px; color: @darker-grey;}
+        tr td{ font-weight: bold; padding: 7px 0px;}
+        .left-orange-dash {border-left: 1px dashed @red; }
+    }
+    #banners{ background-color: @darker-grey;
+        a img {margin: auto;}
     }
 }
