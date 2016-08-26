@@ -45,8 +45,11 @@
     <replace css:content="#viola-controlpanel" css:theme="#viola-controlpanel" method="raw"/>
     <drop css:content="#viola-controlpanel" />
 
-    <replace css:content="#viola-sponsor" css:theme="#viola-sponsor" method="raw"/>
-    <drop css:content="#viola-sponsor" />
+    <replace css:content="#viola-banner" css:theme="#viola-banner" method="raw"/>
+    <drop css:content="#viola-banner" />
+
+    <replace css:content="#viola-sponsors" css:theme="#viola-sponsors" method="raw"/>
+    <drop css:content="#viola-sponsors" />
 
     <!-- Central column -->
     <replace css:theme="#content-container" method="raw">
@@ -67,11 +70,6 @@
             <xsl:apply-templates css:select="#content" />
           </div>
         </div>
-        <footer class="row">
-          <div class="col-xs-12 col-sm-12">
-            <!--xsl:copy-of css:select="#viewlet-below-content" /-->
-          </div>
-        </footer>
       </div>
     </replace>
 

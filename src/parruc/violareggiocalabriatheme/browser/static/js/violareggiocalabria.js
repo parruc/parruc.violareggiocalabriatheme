@@ -3,8 +3,7 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
   $(document).ready(function() {
     //// Flexslider
     $('.flexslider').flexslider({controlNav: true,
-                                 directionNav: true,
-                                 controlsContainer:".flex-custom-pager"});
+                                 directionNav: false});
 
     ///// Countdown
     $('#countdown').countdown($('#countdown').data("deadline"), function(event) {

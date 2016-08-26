@@ -5,7 +5,7 @@ body.template-giocatori{
     .roster-player {margin-top :20px; font-size: 17px;
         a, a:hover, a:visited {color: @darkest-grey; }
     }
-    .roster-head { font-family: din-condensed; margin-top: 90%; font-size: 275%;}
+    .roster-head { font-family: din-condensed; margin-top: 90%; font-size: 275%; text-align:center;}
 }
 
 body.template-view.portaltype-giocatore{
@@ -15,9 +15,9 @@ body.template-view.portaltype-giocatore{
         .player-image { display: inline-block;
             img{border: 3px solid @red; z-index: 4; position: relative;}
         }
-        .white-box-wrapper {margin: 4px 5px 0px 0px; position:relative; z-index: 4;}
-        .white-border {border-right: 25px solid @white; border-bottom: 25px solid transparent; width:0px; display: inline-block; float: right;}
-        .white-box {width: 70%; float: right; height:25px; background-color: @white;  margin-left: -1px;}
+        .white-box-wrapper {margin: 2px 0px 0px 0px; position:relative; z-index: 4;}
+        .white-border {border-right: 33px solid @white; border-bottom: 33px solid transparent; width:0px; display: inline-block; float: right;}
+        .white-box {width: 70%; float: right; height:33px; background-color: @white;  margin-left: -1px;}
         h1.player-name{ margin-right:50px; display: inline-block; background-color: transparent; font-family: din-condensed; text-align: right; padding-top: 0px; vertical-align: top;
             span {display: block;}
             .orange-head{font-size: 375%;}
@@ -26,13 +26,13 @@ body.template-view.portaltype-giocatore{
     }
     .bio-border{ border-right: 125px solid @dark-grey; border-bottom: 125px solid transparent; width:0px; display: inline-block; position: absolute;}
     .bio-content-wrapper{background-color: @dark-grey; margin-left:124px; height: 125px;  padding-top: 15px;}
-    .bio-content{color: @white;}
+    .bio-content{color: @white; padding-left: 10px;}
     .bio {font-size: 175%;
         .grey{color: @darkest-grey; text-transform: uppercase; font-weight: bold; font-size: 85%;}
         .white{color: @white;}
     }
-    .role{font-family: din-condensed; font-size: 450%; color: @white; float: right; margin-right: 400px;}
-    .nextprev{ margin-top: 40px; font-family: din-condensed; color: @white; line-height: 50px; font-size: 175%;
+    .role{font-family: din-condensed; font-size: 100px; color: @white; float: right; margin-right: 400px; margin-bottom: 0px;}
+    .nextprev{font-family: din-condensed; color: @white; line-height: 50px; font-size: 175%; margin-top: 2px;
         .text-right {text-align:right; position: relative; right: 10px; }
         .text-left {text-align:left; position: relative; left: 10px;}
         .next {border-left: 25px solid @red; border-bottom: 50px solid transparent; width:0px; display: inline-block; float: left;}
@@ -42,7 +42,7 @@ body.template-view.portaltype-giocatore{
         a, a:hover, a:visited { color: @white;}
     }
     .stats{
-        h2{ color: @red; font-size: 150%; margin-top: 20px; margin-bottom:10px; font-style: italic; font-weight: bold;}
+        h2{ color: @red; font-size: 150%; margin-top: 20px; margin-bottom:10px; font-style: italic; font-weight: bold; padding-left: 10px;}
         .stats-table{ width: 100%; font-size: 125%; margin: 15px 0px%;
             th{ color: @red; font-weight: bold; border: 1px solid @dark-grey; text-align:center;}
             td{ border: 1px solid @dark-grey; text-align:center; color: @white}
