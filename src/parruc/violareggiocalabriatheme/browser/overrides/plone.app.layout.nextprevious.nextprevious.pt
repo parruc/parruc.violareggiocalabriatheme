@@ -14,7 +14,7 @@
                      previous view/previous" tal:condition="python:previous is not None or next is not None">
 
       <div class="row">
-        <div class="text-right col-xs-6">
+        <div class="text-right col-xs-6 no-padding-right">
           <tal:block tal:condition="previous">
             <span class="prev-link-wrapper">
               <a title="Go to previous item" i18n:attributes="title title_previous_item" tal:attributes="href previous/url">
@@ -27,7 +27,7 @@
           </tal:block>
         </div>
 
-        <div class="text-left col-xs-6">
+        <div class="text-left col-xs-6 no-padding-left">
           <tal:block tal:condition="next">
             <span class="next-link-wrapper">
               <a title="Go to next item" i18n:attributes="title title_next_item" tal:attributes="href next/url">

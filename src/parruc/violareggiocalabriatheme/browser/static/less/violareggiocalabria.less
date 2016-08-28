@@ -5,6 +5,7 @@
 @import 'variables.less';
 @import 'hp-and-partite.less';
 @import 'giocatore.less';
+@import 'news.less';
 
 /* GENERIC */
 body{  background: @bg;}
@@ -25,6 +26,7 @@ i.link-https{display: none;}
 #main-container, .documentFirstHeading {background-color: @white; }
 #main-container>div[class^="col-"]{background-color: @bg}
 .label {color:@darkest-grey; }
+.orange-top-border {border-top: 10px solid @red;}
 /*background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
 background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);*/
 //.outer-wrapper{background-image: url('images/pattern.png'); background-repeat:repeat;}
@@ -50,14 +52,13 @@ h1.documentFirstHeading {text-align: center;}
 .vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
 #full-width-slides{
-    ol.flex-control-nav {position: absolute; top: 175px; z-index: 10;
+    ol.flex-control-nav {position: absolute; bottom: 25px; z-index: 10;
         li {margin: 0px 3px;}
     }
     .flexslider { border: 0px;
         .slides > li > .flex-direction-nav {display: none;}
     }
-    .read-more{margin-top: 15px;}
-    .caption{position: absolute; top: 20%; color: @white;
+    .caption{position: absolute; top: 25px; color: @white;
         h1 { text-transform: none;  width: 50%; margin: 10px auto; font-size:275%;}
     }
     a.btn { padding: 3px 10px; }
@@ -84,6 +85,16 @@ body.template-edit {
     .navbar-toggle:before{content: "Menu";}
     .nav>li.open>a, .nav>li.selected>a, .nav>li>a:focus, .nav>li>a:hover, .nav>li.open>ul>li>a:hover,{ background-color: @sitenav-link-hover-bg; color: @white;}
     .navbar-nav { text-transform: uppercase}
+}
+
+.nextprev{font-family: din-condensed; color: @white; line-height: 50px; font-size: 175%; margin-top: 2px;
+    .text-right {text-align:right; position: relative; right: 10px; }
+    .text-left {text-align:left; position: relative; left: 10px;}
+    .next {border-left: 25px solid @red; border-bottom: 50px solid transparent; width:0px; display: inline-block; float: left;}
+    .prev {border-right: 25px solid @red; border-bottom: 50px solid transparent; width:0px; display: inline-block; float: right;}
+    .prev-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: right; margin-left: -1px;}
+    .next-link-wrapper {background: @red; display: inline-block; height: 50px; vertical-align: top; padding: 5px; float: left; margin-right: -1px;}
+    a, a:hover, a:visited { color: @white;}
 }
 
 body.template-default_error_message, body.temaplte-login_form, body.template-edit, body.template-folder_contents, body.template-document_view{
