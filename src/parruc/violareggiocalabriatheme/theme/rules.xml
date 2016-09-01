@@ -38,6 +38,7 @@
     <drop css:theme="#hero" css:if-not-content=".hero" />
     <drop css:content=".hero" />
 
+    <drop css:content="article#content header" />
     <!-- full-width breadcrumb -->
     <!--replace css:content="#portal-breadcrumbs" css:theme="#above-content" /-->
 
