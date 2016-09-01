@@ -53,6 +53,8 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
 
     $('.same-height').matchHeight();
 
+    $('.dropdown-toggle').dropdown();
+
     $("#v-tabs, #tab").tabs();
     $('.players-slider').bxSlider({
       slideWidth: 199,
