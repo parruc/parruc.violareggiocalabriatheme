@@ -6,6 +6,7 @@
 @import 'hp-and-partite.less';
 @import 'giocatore.less';
 @import 'news.less';
+@import 'documents.less';
 
 /* GENERIC */
 body{  background: @bg;}
@@ -49,7 +50,7 @@ h1.documentFirstHeading {text-align: center;}
 .table-row {display: table; border-collapse: separate; width: 100%;
     div[class^="col-"]{ display: table-cell; float:none;}
 }
-.tab {font-family: din-condensed; font-size: 18px; top:0px;}
+.tab, .tab h1 {font-family: din-condensed; font-size: 18px; top:0px; margin-bottom: 0px; line-height: 50px;}
 .vcenter { display: inline-block; vertical-align: bottom; float: none;}
 
 #full-width-slides{
@@ -72,6 +73,8 @@ body.template-edit, body.template-login_form, body.template-logged_out, body.tem
     #content, #content-core {background: @white; }
     .navbar-brand {display: none;}
 }
+.tab, .tab-small {z-index: 5; position: relative; top: 2px;}
+.tab-small {z-index: 4; opacity: 0.6;}
 #mainnavigation-wrapper {padding:0px;}
 #mainnavigation{font-family: din-condensed; font-size: 18px;
     ul.dropdown-menu {box-shadow: none; -webkit-box-shadow: none; min-width: auto;
