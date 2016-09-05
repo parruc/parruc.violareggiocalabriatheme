@@ -8,10 +8,15 @@
 <body>
 
 <metal:content-title fill-slot="content-title">
-    <h1 class="tab" tal:content="context/Title">Titolo contenuto</h1>
+    <metal:content-title define-macro="content-title">
+        <h1 tal:condition="context/slides" class="tab" tal:content="context/Title">Titolo contenuto</h1>
+     </metal:content-title>
 </metal:content-title>
 
-<metal:content-description fill-slot="content-description"></metal:content-description>
+<metal:content-description fill-slot="content-description">
+    <metal:content-description define-macro="content-description">
+     </metal:content-description>
+</metal:content-description>
 
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core" tal:define="toc context/table_of_contents|nothing;">
@@ -19,7 +24,7 @@
           tal:condition="context/text"
           tal:content="structure python:context.text.output_relative_to(view.context)"
           tal:attributes="class python: toc and 'pat-autotoc' or ''" />
-</metal:content-core>
+      </metal:content-core>
 </metal:content-core>
 </body>
 </html>

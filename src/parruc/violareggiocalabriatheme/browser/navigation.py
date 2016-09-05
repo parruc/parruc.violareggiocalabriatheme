@@ -87,6 +87,7 @@ class CatalogNavigationTabs(BrowserView):
                 name=u'plone_context_state'
             )
             actions = context_state.actions(category)
+            actions_append = context_state.actions(category+"_append")
 
         # Build result dict
         result = []
@@ -114,5 +115,9 @@ class CatalogNavigationTabs(BrowserView):
             data["children"] = []
             for sub_item in sub_rawresult:
                 data["children"].append(self._formatData(sub_item))
+            result.append(data)
+        for actionInfo in actions_append:
+            data = actionInfo.copy()
+            data['name'] = data['title']
             result.append(data)
         return result
