@@ -66,13 +66,11 @@ h1.documentFirstHeading {text-align: center;}
     a.btn { padding: 3px 10px; }
     img { min-height: 150px;}
 }
-body.template-default_error_message{
-    #content-core{background-color: @white;}
+body.template-default_error_message, body.template-edit, body.template-login_form, body.template-logged_out, body.tempalte-login_success, body.template-contact-info, body.template-folder_contents, body.template-document_view{
+    #content-core{background-color: @white; padding:15px;}
+    .navbar-brand {height: 100px;}
 }
-body.template-edit, body.template-login_form, body.template-logged_out, body.tempalte-login_success, body.template-contact-info{
-    #content, #content-core {background: @white; }
-    .navbar-brand {display: none;}
-}
+
 .tab, .tab-small {z-index: 5; position: relative; top: 2px;}
 .tab-small {z-index: 4; opacity: 0.6;}
 #mainnavigation-wrapper {padding:0px;}
@@ -104,10 +102,6 @@ body.template-edit, body.template-login_form, body.template-logged_out, body.tem
     a, a:hover, a:visited { color: @white;}
 }
 
-body.template-default_error_message, body.temaplte-login_form, body.template-edit, body.template-folder_contents, body.template-document_view{
-    .navbar-brand {height: 100px;}
-    #content-core{background-color: @white; padding:15px;}
-}
 body .template-document_view #content{background-color: @white}
 
 @import 'responsive.less';
