@@ -27,7 +27,6 @@ i.link-https{display: none;}
 .portalMessage {text-align: center;}
 #main-container, .documentFirstHeading {background-color: @white; }
 #main-container>div[class^="col-"]{background-color: @bg}
-.label {color:@darkest-grey; }
 .orange-top-border {border-top: 10px solid @red;}
 /*background: -webkit-linear-gradient(left,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);  background: -o-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);
 background: -moz-linear-gradient(right,@bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders); background: linear-gradient(to right, @bg-gradient-borders,@bg-gradient-middle, @bg-gradient-borders);*/
@@ -67,9 +66,9 @@ h1.documentFirstHeading {text-align: center; padding: 25px 0px 50px 0px}
     img { min-height: 150px;}
 }
 
-body.template-default_error_message, body.template-edit, body.template-login_form, body.template-logged_out, body.tempalte-login_success, body.template-contact-info, body.template-folder_contents, body.template-document_view{
+body.template-default_error_message, body.template-edit, body.portaltype-folder, body.viewpermission-add-portal-content, body.template-login_form, body.template-logged_out, body.tempalte-login_success, body.template-contact-info, body.template-folder_contents, body.template-document_view{
     #content-core{background-color: @white; padding: 15px;}
-
+    .label {color:@darkest-grey; }
 }
 
 .tab, .tab-small {z-index: 5; position: relative; top: 2px;}
