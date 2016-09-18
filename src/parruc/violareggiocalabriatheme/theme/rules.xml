@@ -32,6 +32,7 @@
 
     <!-- move global nav -->
     <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+    <drop css:content="#portal-mainnavigation" />
 
     <!-- move hero to top -->
     <replace css:theme-children="#hero .gigantic" css:content-children=".hero"/>
@@ -103,7 +104,8 @@
     <!--replace css:theme="#portal-top" css:content-children="#portal-top" /-->
 
     <!-- Footer -->
-    <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+    <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" method="raw"/>
+    <drop css:content="#portal-footer-wrapper" />
 
     <!-- toolbar -->
     <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
