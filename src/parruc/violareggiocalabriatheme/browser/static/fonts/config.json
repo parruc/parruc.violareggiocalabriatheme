@@ -83,6 +83,12 @@
       "css": "gplus",
       "code": 61653,
       "src": "fontawesome"
+    },
+    {
+      "uid": "0fbfb1cd7a847c88ea4c141d0e1bbdb5",
+      "css": "instagram",
+      "code": 62253,
+      "src": "entypo"
     }
   ]
 }
