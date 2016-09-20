@@ -35,7 +35,7 @@ require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jq
 
     $('.dropdown-toggle').dropdown();
 
-    $("#v-tabs, #tab").tabs();
+    $("#v-tabs").tabs();
     $('.players-slider').bxSlider({
       slideWidth: 199,
       minSlides: 2,

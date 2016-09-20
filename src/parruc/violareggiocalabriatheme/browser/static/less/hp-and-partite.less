@@ -56,9 +56,10 @@ body.template-hp, body.template-partite {
             .video-category {color: @light-red;}
             .icon-play {color: @white;}
         }
-        .video-tab{
+        .video-tab{position: absolute;
+            .tab-wrapper {position: relative; bottom: 52px;}
             .tab {border-bottom: 0px; border-top: 50px solid @red;}
-            h2{margin:0px; line-height: 50px; position:relative; bottom: 50px; font-size: 18px;}
+            h2{margin:0px; line-height: 50px; position:relative; bottom: 52px; font-size: 18px; white-space: nowrap;}
         }
         .tab-content {border: 3px solid @white;
             .video-inner-title {background-color: @darker-grey; color: @white; font-weight: bold; padding: 5px;}
