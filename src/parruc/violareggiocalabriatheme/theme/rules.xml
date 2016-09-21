@@ -12,7 +12,7 @@
       <!-- Attributes -->
       <copy attributes="*" css:theme="html" css:content="html" />
       <!-- Base tag -->
-      <before css:theme="title" css:content="base" />
+      <drop css:content="base" />
       <!-- Title -->
       <replace css:theme="title" css:content="title" />
       <!-- Pull in Plone Meta -->
