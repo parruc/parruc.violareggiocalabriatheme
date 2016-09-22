@@ -1,13 +1,14 @@
-body.template-news, body.portaltype-news-item {
+body.template-wip, body.template-news, body.portaltype-news-item {
     #viewlet-above-content-title .leadImage{display: none;}
     #news {margin-top: -76px; margin-bottom: 20px;
         .news-container{position:relative;
             .r-box-n {min-height: 608px;
-		article{
-			p{color: @dark-grey;}
-			.leadImage{float: right;}
-		}
-	    }
+                article{
+                    p{color: @dark-grey;}
+                    .leadImage{float: right;}
+                    div.wip {font-size: 150%;}
+                }
+            }
             .tab {z-index: 5; position: relative; top: 2px;}
             h3 > a, h3 {color:@darker-grey;}
             .grey-boxes{ position: relative; bottom: 1px;}
