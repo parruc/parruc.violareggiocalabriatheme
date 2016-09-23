@@ -1,4 +1,4 @@
-require(["jquery", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider", "jquery.prettyphoto", "jquery.matchheight"], function($) {
+require(["jquery", "bootstrap", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider", "jquery.prettyphoto", "jquery.matchheight", ], function($) {
   "use strict";
   $(document).ready(function() {
 
