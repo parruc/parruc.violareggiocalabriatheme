@@ -38,8 +38,6 @@ require(["jquery", "plone", "jquery.countdown", "jquery.jqueryui", "jquery.bxsli
 
     $('.same-height').matchHeight();
 
-    $('.dropdown-toggle').dropdown();
-
     $("#v-tabs").tabs();
 
     $('.players-slider').bxSlider({
