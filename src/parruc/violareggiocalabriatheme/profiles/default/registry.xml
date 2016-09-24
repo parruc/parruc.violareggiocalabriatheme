@@ -52,12 +52,6 @@
     <records prefix="plone.resources/modernizr"
              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="js">++resource++parruc.violareggiocalabriatheme/js/modernizr.min.js</value>
-    </records>
-
-    <records prefix="plone.resources/bootstrap"
-             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-       <value key="js">++resource++parruc.violareggiocalabriatheme/js/bootstrap.min.js</value>
-       <value key="export">bootstrap</value>
        <value key="deps">jquery</value>
     </records>
 
@@ -80,8 +74,6 @@
     <records prefix="plone.bundles/violareggiocalabria-libs"
              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
       <value key="resources">
-          <!--element>isotope</element-->
-          <element>modernizr</element>
           <element>jquery.jqueryui</element>
           <element>jquery.bxslider</element>
           <element>jquery.matchheight</element>
@@ -89,11 +81,11 @@
           <element>jquery.flexslider</element>
           <element>jquery.prettyphoto</element>
           <element>jquery.scrollable</element>
-          <element>bootstrap</element>
           <element>barceloneta</element>
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
+      <value key="depends">plone</value>
       <!--value key="merge_with">default</value-->
       <value key="last_compilation"></value>
     </records>
