@@ -1,9 +1,9 @@
-require(["jquery", "bootstrap", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider", "jquery.prettyphoto", "jquery.matchheight", ], function($) {
+require(["jquery", "plone", "jquery.countdown", "jquery.jqueryui", "jquery.bxslider", "jquery.flexslider", "jquery.prettyphoto", "jquery.matchheight", ], function($) {
   "use strict";
   $(document).ready(function() {
 
     if($("body.userrole-authenticated").length == 0){
-        $("html/head/base").remove();
+        $("html head base").remove();
     }
 
     //// Flexslider
